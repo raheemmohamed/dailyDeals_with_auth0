@@ -29,11 +29,11 @@ var port = process.env.PORT || 8080;
         cache: true,
         rateLimit: true,
         jwksRequestsPerMinute: 5,
-        jwksUri: 'https://devauthor.auth0.com/.well-known/jwks.json'
+        jwksUri: ''
   }),
   audience: 'http://localhost:3000',
-  issuer: 'https://devauthor.auth0.com/',
-  algorithms: ['RS256']
+  issuer: '',
+  algorithms: 
   });
 
 app.use(jwtCheck);
